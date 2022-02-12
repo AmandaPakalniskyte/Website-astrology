@@ -1,1 +1,1 @@
-# mano-puslapis
+# internetinis-puslapis
