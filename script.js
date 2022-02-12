@@ -167,14 +167,3 @@ for(let i=0; i<btn.length; i++) {
 
 
 
-var position = 300,
-    horizon = document.getElementsByClassName('horizon')[0],
-    binded = false;
-(function animateSquare(){
-  position -= 300;
-  horizon.style.webkitTransform = 'translateX('+position+'px)';
-  if (!binded) {
-    horizon.addEventListener('webkitTransitionEnd',animateSquare,false);
-    binded = true;
-  }
-})();
