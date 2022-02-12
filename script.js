@@ -144,7 +144,7 @@ function make_it_invisible(someDiv){
 var btn = document.getElementsByClassName("btn");
 var gallery = document.getElementById("gallery");
 var images = new Array(
-  "../images/cancer.png",
+  
   "../images/solar.png",
   "../images/calendar.png",
   "../images/harmony.png",
