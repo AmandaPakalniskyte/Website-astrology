@@ -268,13 +268,24 @@
       &:focus {
           transform: scale(1.3);
           font-weight:bold;
+
+          
+            // content: "alala";
+            // color: red;
+          
+          
           
       }
+    
+      
 
       &:hover {
           
           transform: scale(1.3);
       }
+
+
+      
       
       } 
     }
@@ -306,6 +317,8 @@
           padding:7%;
           line-height: 150%;
           font-size: 20px;
+
+          
            
           
           }
@@ -359,6 +372,8 @@
 
         .mystyle {
   opacity:0;
+
+  
    
 
     }
@@ -370,6 +385,7 @@
   position: absolute;
 
   animation: fadeIn linear 2s; 
+  
  
 }
 @keyframes fadeIn {
@@ -403,6 +419,17 @@
 
 
 
+
+
+
+
+
+
+button:first-of-type:focus-within:before {
+  position:absolute;
+  content: "lalal";
+  color: red;
+}
 
 
 
