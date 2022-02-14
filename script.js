@@ -66,6 +66,7 @@ function myFunction() {
   var element = document.getElementById("myDIV");
   element.classList.remove("mystyle");
   element.classList.add("mystyle2");
+  
     
   make_it_invisible("myDIV2"); 
   make_it_invisible("myDIV3"); 
@@ -80,6 +81,8 @@ function myFunction2() {
   var element = document.getElementById("myDIV2");
   element.classList.remove("mystyle");
   element.classList.add("mystyle2");
+  var element = document.getElementById("myDIV");
+  element.classList.remove("active");
   
   make_it_invisible("myDIV"); 
   make_it_invisible("myDIV3"); 
@@ -95,6 +98,7 @@ function myFunction3() {
   element.classList.remove("mystyle");
   element.classList.add("mystyle2");
   
+  
   make_it_invisible("myDIV"); 
   make_it_invisible("myDIV2"); 
   make_it_invisible("myDIV4"); 
@@ -108,6 +112,7 @@ function myFunction4() {
   element.classList.remove("mystyle");
   element.classList.add("mystyle2");
   
+  
   make_it_invisible("myDIV"); 
   make_it_invisible("myDIV2"); 
   make_it_invisible("myDIV3"); 
@@ -120,6 +125,7 @@ function myFunction5() {
   var element = document.getElementById("myDIV5");
   element.classList.remove("mystyle");
   element.classList.add("mystyle2");
+ 
   
   make_it_invisible("myDIV"); 
   make_it_invisible("myDIV2"); 
@@ -161,6 +167,19 @@ function make_it_invisible(someDiv){
 //     this.className += " active";
 //   };
 // };
+
+
+
+
+
+// for (var i = 0; i < 100; i++) {
+//   var star = '<div class="star" style="animation: twinkle '+((Math.random()*5) + 5)+'s linear '+((Math.random()*5) + 5)+'s infinite; top: '+Math.random()*$(window).height()+'px; left: '+Math.random()*$(window).width()+'px;"></div>';
+//   $('body').append(star);
+// };
+
+
+
+
 
 
 
