@@ -97,6 +97,8 @@ function myFunction3() {
   var element = document.getElementById("myDIV3");
   element.classList.remove("mystyle");
   element.classList.add("mystyle2");
+  var element = document.getElementById("myDIV");
+  element.classList.remove("active");
   
   
   make_it_invisible("myDIV"); 
@@ -111,6 +113,8 @@ function myFunction4() {
   var element = document.getElementById("myDIV4");
   element.classList.remove("mystyle");
   element.classList.add("mystyle2");
+  var element = document.getElementById("myDIV");
+  element.classList.remove("active");
   
   
   make_it_invisible("myDIV"); 
@@ -125,6 +129,8 @@ function myFunction5() {
   var element = document.getElementById("myDIV5");
   element.classList.remove("mystyle");
   element.classList.add("mystyle2");
+  var element = document.getElementById("myDIV");
+  element.classList.remove("active");
  
   
   make_it_invisible("myDIV"); 
@@ -139,6 +145,7 @@ function make_it_invisible(someDiv){
   var el = document.getElementById(someDiv);
   el.classList.remove("mystyle2");
   el.classList.add("mystyle");
+  
   
 };
 
@@ -181,7 +188,46 @@ function make_it_invisible(someDiv){
 
 
 
+const scrollElements2 = document.querySelectorAll(".js-scroll2");
 
+const elementInView2 = (el, dividend = 1) => {
+  const elementTop2 = el.getBoundingClientRect().top;
+
+  return (
+    elementTop2 <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
+};
+
+const elementOutofView2 = (el) => {
+  const elementTop2 = el.getBoundingClientRect().top;
+
+  return (
+    elementTop2 > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const displayScrollElement2 = (element) => {
+  element.classList.add("scrolled2");
+};
+
+const hideScrollElement2 = (element) => {
+  element.classList.remove("scrolled2");
+};
+
+const handleScrollAnimation2 = () => {
+  scrollElements2.forEach((el) => {
+    if (elementInView2(el, 1.25)) {
+      displayScrollElement2(el);
+    } else if (elementOutofView2(el)) {
+      hideScrollElement2(el)
+    }
+  })
+}
+
+window.addEventListener("scroll", () => { 
+  handleScrollAnimation2();
+}); 
 
 
 

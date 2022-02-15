@@ -2,17 +2,17 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  
   width: 100%;
-
-  
-  
+  // min-width: 10px;
+  z-index: 999;
   background-color: #3d4366;
   font-weight: bold;
-  z-index: 999;
   display: flex;
-      justify-content: center;
-      align-items: center;
-      justify-items: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+ 
 
   @media (max-width: 800px) {
       padding: 10px 0;
@@ -22,10 +22,16 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
+
+     
+       
       padding-top: 20px;
       padding-bottom: 20px;
-      margin: 0;
-      // margin-bottom: 2px;
+      // width:800px;
+      margin:0;
+      // margin: 0;
+      
 
 
 
@@ -131,7 +137,7 @@ header {
       nav {
 
           @media (max-width: 800px) {
-              background-color: $myColorFour;
+             
               position: absolute;
               width: 100%;
               height: 230px;
@@ -153,6 +159,7 @@ header {
               list-style: none;
               display: flex;
               padding: 0;
+             
 
               @media (max-width: 800px) {
                   flex-direction: column;
