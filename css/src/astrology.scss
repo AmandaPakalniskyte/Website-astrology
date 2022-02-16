@@ -1,42 +1,55 @@
 .astrology {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 900px;
-    // background-image: url("../images/black.jpg");
-    background-color: black;
-    background-size: cover;
-    position: relative;
-    top: 0;
-	  left:0;
-	  bottom: 0;
-  	right: 0;
-    padding-left: 50px;
-    padding-right: 50px;
+  display: flex;
+  height: 650px;
+  width:100%;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-image: url("../images/black-sky.jpg");
+  background-size: contain;
+  position: relative;
+  
 
-      &:before {
-          content: '';
-          position: absolute;
-          background-image: linear-gradient(black 0%, transparent 25%, transparent 75%, black 100%);
-          background-size: cover;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
+  &:before {
+    content: "";
+    height:450px;
+    width: 100%;
+    background-image: url("../images/twinkling.png");
+    animation-name: moving;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 5;
+    background-size: contain;
+    background-repeat: repeat;
+    
+  }
+
+  @keyframes moving {
+    0% {
+      transform: translateY(0%);
+      
+    }
+    100% {
+      transform: translateY(50px);
+     
+    }
+
+    }
+
     
       .container {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
-                height: 70%;
+                height: 80%;
                 width: 100%;
                 padding-left: 100px;
                 padding-right: 100px;
                 margin:0;
                 position: relative;
-                border: 2px solid yellow;
+                // border: 2px solid yellow;
                 margin-top: 20px;
                 position: relative;
     
@@ -44,8 +57,8 @@
                   display: flex;
                   flex-direction: column;
                   justify-content: center;
-                  align-items: center;
-                  border: 2px solid red;
+                  align-items:center;
+                  // border: 2px solid red;
                   height: 100%;
                   width:520px;
                   
@@ -71,6 +84,7 @@
         
                             &:focus {
                                 transform: scale(1.3);
+                                
                                 font-weight:bold;
                                 outline:none;
                             }
@@ -100,25 +114,32 @@
             width:560px;
             font-size: 25px;
             color: white;
-            border:2px solid green;
+            // border:2px solid green;
             height: 100%;
             position:relative;
 
             .div1, .div2, .div3, .div4, .div5 { 
               grid-area: 1 / 1 / 2 / 2;
               display:flex;
+              flex-direction: column;
               justify-content: center;
-              align-items: center;
+              align-items:flex-start;
               position:relative;
-              height: 625px;
+              height: 600px;
               width: 560px;
-              border:2px solid blue;
+              // border:2px solid blue;
               z-index:12;
               grid-template-rows: repeat(2, auto) repeat(3, 1fr) repeat(2, auto);
               line-height: 150%;
               font-size: 20px;
               padding-left:10px;
               padding-right: 10px;
+              position: relative;
+
+              p {
+                font-size: 24px;
+                font-weight: bold;
+              }
              
             }
     
@@ -152,83 +173,4 @@
 
 
 
-      .stars {
-      background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: block;
-      z-index: 0;
-      }
-
-      .twinkling{
-      width:10000px;
-      height: 100%;
-      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-      background-size: 1000px 1000px;
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      z-index: 2;
-      margin-left:-450px;
-      
-      
-      animation: move-background 50s linear infinite;
-
-      }
-
-
-      @keyframes move-background {
-      from {
-      transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-      transform: translate3d(1000px, 0px, 0px);
-      }
-    }
-
 }
-
-
-        
-
-
-
-.test {
-  display: flex;
-  height: 500px;
-  width:100%;
-  // background: pink;
-  background-image: url("../images/black-sky.jpg");
-  background-size: contain;
-  
-
-  &:before {
-    content: "";
-    height:500px;
-    width: 800px;
-    background-image: url("../images/twinkling.png");
-    animation-name: moving;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    opacity: 0.5;
-    position: absolute;
-    z-index: 5;
-    
-  }
-
-  @keyframes moving {
-    0% {
-      transform: translateX(0px);
-    }
-    100% {
-      transform: translateX(500px);
-    }
-
-    }
-
-  }

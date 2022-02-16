@@ -262,7 +262,7 @@
     
 .soul {
   display: flex;
-  height: 800px;
+  height: 1000px;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -277,13 +277,13 @@
   position: relative;
    padding-left: 7%;
   padding-right:7%;
-  padding-top: 250px;
+  padding-top: 40px;
       
 
   &:before {
     content: '';
               position: absolute;
-              background: linear-gradient(black 0%, transparent 20%, transparent 80%, black 100%);
+              background: linear-gradient(black 0%, transparent 20%, transparent 70%, black 100%);
               background-size: cover;
               top: 0;
               left: 0;

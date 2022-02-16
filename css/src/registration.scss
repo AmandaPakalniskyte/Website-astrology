@@ -1,76 +1,61 @@
-.registration{
+  .registration {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    width: 100%;
-    height: 800px;
-    background-image: url("../images/black.jpg");
-    background-size: cover;
+    padding-top:150px;
+    padding-bottom: 150px;
+    width:100%;
+    // background: pink;
+    background-image: url("../images/black-sky.jpg");
+    background-size: contain;
     position: relative;
-    padding-left: 15%;
-    padding-right: 15%;
     
-
+  
     &:before {
-        content: '';
-        position: absolute;
-        background-image: linear-gradient(black 0%, transparent 25%, transparent 75%, black 100%);
-        background-size: cover;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        
+      content: "";
+      height:500px;
+      width: 100%;
+      background-image: url("../images/twinkling.png");
+      animation-name: moving;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      opacity: 0.5;
+      position: absolute;
+      z-index: 5;
+      background-size: contain;
+      background-repeat: repeat;
+      
     }
-
-    .container {
-        display: flex;
-        justify-content: space-between;
-        height: 80%;
+  
+    @keyframes moving {
+      0% {
+        transform: translateY(0%);
         
-        margin:0;
-        position: relative;
-        border: 2px solid yellow;
-        margin-top: 100px;
-        color: white
-    }
-}
+      }
+      100% {
+        transform: translateY(100px);
+       
+      }
+  
+      }
 
-.stars {
-    background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
-    position: absolute;
-     top: 0;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     display: block;
-       z-index: 0;
-   }
-   
-   .twinkling{
-    width:10000px;
-     height: 100%;
-     background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
-     background-size: 1000px 1000px;
-       position: absolute;
-       right: 0;
-       top: 0;
-       bottom: 0;
-       z-index: 2;
-       
-       
-     animation:move-background 50s linear infinite;
-     
-   }
-  
-  
-   @keyframes move-background {
-    from {
-          transform: translate3d(0px, 0px, 0px);
-      }
-      to { 
-          transform: translate3d(1000px, 0px, 0px);
-      }
-  }
-  
+      .container {
+      //   display: flex;
+      //  justify-content: center;
+      //  align-items: center;
+        // height: 80%;
+        // width:100%;
+        // position: relative;
+        
+        // margin:0;
+        // position: relative;
+        // border: 2px solid yellow;
+        // margin: 0;
+        // color: white;
+        z-index: 55;
+        padding:10px;
+        // background-color: #195b98;
+        width: 500px
+    }
+    }  
