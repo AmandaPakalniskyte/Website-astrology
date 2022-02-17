@@ -80,8 +80,9 @@
                           font-size: 25px;
                           cursor: pointer;
                           margin-bottom: 40px;
-                          font-family: Poiret One, Helvetica, sans-serif;
+                          font-family: Cairo, Helvetica, sans-serif;
                           
+                  
                           z-index: 55;
                           
                 
@@ -132,6 +133,7 @@
             // border:2px solid green;
             height: 100%;
             position:relative;
+            flex-wrap: wrap;
            
 
             .div1, .div2, .div3, .div4, .div5 { 
@@ -140,9 +142,10 @@
               flex-direction: column;
               justify-content: center;
               align-items:flex-start;
-              position:relative;
+              flex-wrap: wrap;
+              position:absolute;
               height: 600px;
-              width: 760px;
+              width: 550px;
               // border:2px solid blue;
               z-index:12;
               grid-template-rows: repeat(2, auto) repeat(3, 1fr) repeat(2, auto);
