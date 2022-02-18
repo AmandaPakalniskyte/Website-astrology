@@ -57,6 +57,11 @@
                 position: relative;
                 padding-left: 20%;
                 padding-right: 20%;
+
+                @media (max-width: 1345px) {
+                 
+                  
+                }
                 
     
                 .selection-bar {
@@ -67,6 +72,9 @@
                   // border: 2px solid red;
                   height: 100%;
                   width:320px;
+                  flex-wrap: nowrap;
+                  word-wrap: normal;
+                  white-space: nowrap;
                   
                   
                   
@@ -84,6 +92,9 @@
                           
                   
                           z-index: 55;
+                          flex-wrap: nowrap;
+                  word-wrap: normal;
+                  white-space: nowrap;
                           
                 
             
@@ -123,7 +134,7 @@
 
         .parent {
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            grid-template-columns: minmax(0, 1fr);
             grid-template-rows: repeat(5, 1fr);
             grid-column-gap: 0px;
             grid-row-gap: 0px;
@@ -134,6 +145,14 @@
             height: 100%;
             position:relative;
             flex-wrap: wrap;
+            word-wrap: break-word;
+            height: 650px;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  justify-content: center;
+  
+  
            
 
             .div1, .div2, .div3, .div4, .div5 { 
@@ -141,18 +160,24 @@
               display:flex;
               flex-direction: column;
               justify-content: center;
-              align-items:flex-start;
+              
+              // text-align: justify;
               flex-wrap: wrap;
               position:absolute;
-              height: 600px;
-              width: 550px;
+              height: 650px;
+              width: 600px;
               // border:2px solid blue;
               z-index:12;
-              grid-template-rows: repeat(2, auto) repeat(3, 1fr) repeat(2, auto);
+              grid-template-columns: minmax(0, 1fr);
               line-height: 150%;
+              // margin-right: 150px;
               margin-left: 50px;
-              padding-right: 20%;
-              
+              // padding-right: 100px;
+              word-wrap: break-word;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  
              
               font-size: 20px;
               

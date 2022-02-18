@@ -17,6 +17,11 @@
         align-content: center;
         flex-direction: column;
         margin:0;
+
+        @media (max-width: 500px) {
+            width:500px;
+            height:500px;
+        }
         
        
         
@@ -36,6 +41,18 @@
             text-align: center;
 
             animation:spin 18s linear infinite;
+
+            @media (max-width: 500px) {
+                font-size: 40px;
+                width: 400px;
+            height: 400px;
+                }
+
+            @media (max-width: 320px) {
+                font-size: 40px;
+                width: 320px;
+            height: 320px;
+                }
 
             @keyframes spin { 
                 100% {  
@@ -83,7 +100,14 @@
             color: white;
             animation: fadeIn linear 6s;
             position: absolute;
-            
+
+            @media (max-width: 800px) {
+            font-size: 40px;
+            }
+
+            @media (max-width: 500px) {
+                font-size: 30px;
+                }
 
             @keyframes fadeIn {
                 0% {
