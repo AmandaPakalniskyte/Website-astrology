@@ -26,6 +26,11 @@
       padding-right: 10%;
     }
 
+    @media (max-width: 450px) {
+      text-align:left;
+      
+    }
+
     &:before {
       content: '';
                 position: absolute;
