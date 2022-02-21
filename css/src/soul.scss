@@ -277,7 +277,7 @@
   position: relative;
    padding-left: 7%;
   padding-right:7%;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: 100px;
   // padding-top: 40px;
 
@@ -314,12 +314,13 @@
   padding-right: 30px;
   padding-left:30px;
 
-  
+  &:last-of-type {
 
   @media (max-width: 800px) {
-    margin-top: 50px;
+    margin-top: 80px;
     
   }
+}
 
   @media (max-width: 500px) {
     text-align: left;

@@ -6,39 +6,40 @@
     // padding-bottom: 100px;
     width:100%;
     // background: pink;
-    background-image: url("../images/black-sky.jpg");
-    background-size: contain;
+    // background-image: url("../images/black-sky.jpg");
+    // background-size: contain;
+    background-color: black;
     position: relative;
     
   
-    &:before {
-      content: "";
-      height:80%;
-      width: 100%;
-      background-image: url("../images/twinkling.png");
-      animation-name: moving;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      opacity: 0.5;
-      position: absolute;
-      z-index: 5;
-      background-size: contain;
-      background-repeat: repeat;
+    // &:before {
+    //   content: "";
+    //   height:80%;
+    //   width: 100%;
+    //   background-image: url("../images/twinkling.png");
+    //   animation-name: moving;
+    //   animation-duration: 2s;
+    //   animation-iteration-count: infinite;
+    //   animation-direction: alternate;
+    //   opacity: 0.5;
+    //   position: absolute;
+    //   z-index: 5;
+    //   background-size: contain;
+    //   background-repeat: repeat;
       
-    }
+    // }
   
-    @keyframes moving {
-      0% {
-        transform: translateY(0%);
+    // @keyframes moving {
+    //   0% {
+    //     transform: translateY(0%);
         
-      }
-      100% {
-        transform: translateY(10%);
+    //   }
+    //   100% {
+    //     transform: translateY(10%);
        
-      }
+    //   }
   
-      }
+    //   }
 
       .container {
       //   display: flex;
