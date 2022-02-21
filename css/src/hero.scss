@@ -21,7 +21,8 @@
         @media (max-width: 500px) {
             width:500px;
             height:500px;
-            padding: 0;
+            
+            
         }
         
        
@@ -45,14 +46,14 @@
 
             @media (max-width: 500px) {
                 font-size: 40px;
-                width: 400px;
-            height: 400px;
+                width: 350px;
+            height: 350px;
                 }
 
-            @media (max-width: 320px) {
+            @media (max-width: 360px) {
                 font-size: 40px;
-                width: 320px;
-            height: 320px;
+                width: 300px;
+            height: 300px;
                 }
 
             @keyframes spin { 
